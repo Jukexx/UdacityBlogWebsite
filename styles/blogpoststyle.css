@@ -1,0 +1,158 @@
+*{
+    margin: 0;
+}
+html {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: lightgoldenrodyellow;
+}
+
+
+.maingrid{
+    display: grid;
+    grid-template-columns: 100% ;
+    grid-template-columns: 10, 85, 10;
+    grid-template-areas:
+    "header"
+    "main""aside"
+    "footer";
+    flex-direction: row;
+    margin: 0;
+}
+
+.header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    grid-area: header;
+    text-align: center;
+    height: 10vh;
+    width: 100%;
+    color: white;
+    background-color: rgb(58, 48, 102);
+    padding-bottom: 20px;
+}
+
+.post{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    grid-area: main;
+    margin: 5% auto;
+    width: 60%;
+    border-radius: 10px;
+    border: 2px;
+    border-style: dashed;
+    padding: 5%;
+}
+
+
+#blogTitle{
+    margin: 20px 0px 0px 0px;
+    font-size: 50px;
+    text-align: center;
+}
+
+.postimg{
+    border-radius: 15px 15px 00px 0px;
+    object-fit: contain;
+    max-height: 1000px;
+    z-index: -5;
+    min-width: 250px;
+    margin-top: 10px;
+}
+
+a{
+    text-decoration: none;
+}
+
+h1{
+    text-align: center;
+    font-size: 35px;
+    font-family: monospace;
+}
+h2{
+    font-size: 25px;
+    font-family: monospace;
+    color: lightslategrey;
+    text-align: center;
+    margin-top: 15px;
+}
+h3{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(81, 157, 182);
+    text-align: center;
+    margin-top: 15px;
+}
+
+p{
+    text-align: center;
+    margin: 5px 10px;
+    font-family: Arial;
+    margin-top: 15px;
+}
+footer{
+    display: flex;
+    grid-area: footer;
+    background-color: dimgrey;
+    padding: 20px;
+}
+
+
+
+.btgoback{
+    text-align: center;
+    justify-content: center;
+    margin: 30px auto;
+    background-color: green;
+    width: 250px;
+    height: 60px;
+}
+
+a:hover{
+    background-color: blue;
+}
+
+.goback{
+    color: white;
+}
+
+.socialmediatitle{
+    padding-bottom: 20px;
+}
+
+.socialmedialinks{
+    margin-top: 10px;
+    font-size: 35px;
+    text-align: center;
+    text-decoration: none;
+    color:black;
+}
+.socialmedialinks:hover{
+    color:white;
+}
+
+@media(max-width: 1100px){
+    .blogposts{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        grid-area: main;
+        margin: 0 auto;
+        width: 80%;
+    }
+    .btgoback{
+        text-align: center;
+        justify-content: center;
+        margin: 30px auto;
+        background-color: green;
+        width: 60%;
+        min-height: 100px;
+    }
+    .goback{
+        font-size: 50px;
+        color: white;
+    }
+}

@@ -1,0 +1,8 @@
+
+footer{
+    display: flex;
+    grid-area: footer;
+    background-color: dimgrey;
+    margin-top: 13%;
+    padding: 20px;
+}

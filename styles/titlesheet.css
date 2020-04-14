@@ -1,0 +1,25 @@
+h1{
+    font-size: 35px;
+    font-family: monospace;
+}
+h2{
+    font-size: 25px;
+    font-family: monospace;
+    color: lightslategrey;
+}
+h3{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(81, 157, 182);
+}
+
+p{
+    margin: 5px 10px;
+    font-family: Arial;
+}
+
+h3.goback{
+    padding: 10px;
+    text-align: center;
+    color: white;
+}
