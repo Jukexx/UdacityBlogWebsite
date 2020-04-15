@@ -54,12 +54,19 @@ html {
     text-align: center;
 }
 
+figure{
+    text-align: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
 .postimg{
     border-radius: 15px 15px 00px 0px;
     object-fit: contain;
     max-height: 1000px;
     z-index: -5;
     min-width: 250px;
+    max-height: 30vh;
     margin-top: 10px;
 }
 
