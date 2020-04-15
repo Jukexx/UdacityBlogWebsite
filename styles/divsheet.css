@@ -13,3 +13,14 @@ a{
 .btreadmore:hover{
     background-color: blue;
 }
+
+.headerbox{
+    background-color: aliceblue;
+    color: White;
+}
+
+@media(max-width: 1100px){
+    .btreadmore{
+        min-width: 300px;
+        min-height: 100px ;
+}
